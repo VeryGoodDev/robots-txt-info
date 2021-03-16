@@ -1,0 +1,25 @@
+{
+  "name": "robots-txt-info",
+  "version": "0.1.0",
+  "description": "A simple tool that parses a robots.txt file and prints a summary. I'm not expert in SEO or robots.txt, just wanted to learn a little about it and made this for fun.",
+  "main": "index.html",
+  "repository": "https://github.com/verygooddev/robots-txt-info",
+  "author": "VeryGoodDev <very_good_dev@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.js",
+    "start": "serve --listen 9000 ./"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-personal": "github:verygooddev/eslint-config-personal"
+  },
+  "eslintConfig": {
+    "extends": [
+      "personal"
+    ]
+  }
+}
