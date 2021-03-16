@@ -16,7 +16,9 @@ function handleParseClick() {
 }
 function parseInput(rawText) {
   const lines = rawText.split(`\n`).filter((line) => line.length && !line.startsWith(`#`))
-  const siteInfo = {}
+  const siteInfo = {
+    sitemaps: [],
+  }
   const userAgents = {}
   let currentUserAgent
   lines.forEach((line) => {
@@ -35,6 +37,8 @@ function parseInput(rawText) {
       } else {
         userAgents[currentUserAgent][directiveRaw] = value
       }
+    } else if (directive === `sitemap`) {
+      siteInfo.sitemaps.push(value)
     } else {
       siteInfo[directiveRaw] = value
     }
