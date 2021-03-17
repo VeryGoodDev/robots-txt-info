@@ -5,10 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robots.txt Info | VeryGoodDev</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <textarea class="input"></textarea>
-  <button type="button" class="parse-btn">Parse robots.txt</button>
+  <div class="input-wrapper">
+    <textarea class="input"></textarea>
+    <button type="button" class="parse-btn">Parse robots.txt</button>
+  </div>
   <div class="output">
     <div class="site-info"></div>
     <table class="user-agents">
@@ -17,6 +20,7 @@
           <td>User Agent</td>
           <td>Allowed</td>
           <td>Disallowed</td>
+          <td>Crawl Delay</td>
         </tr>
       </thead>
       <tbody></tbody>
